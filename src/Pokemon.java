@@ -1,6 +1,6 @@
 import java.util.Random;
 
-abstract class Pokemon {
+abstract class Pokemon  {
     private String name;
     private int level;
     private int hp;
@@ -14,6 +14,7 @@ abstract class Pokemon {
     private String sound;
     final String speaks;
     private String attackSound;
+    private Pokemon secondaryType;
 
     public Pokemon(String name, int level, double height, double weight, String speaks) {
         this.name = name;
@@ -79,5 +80,14 @@ abstract class Pokemon {
     public String getSpeaks() {
         return speaks;
     }
+
+    public void setSecondaryType(Pokemon secondaryType) {
+        this.secondaryType = secondaryType;
+    }
+    public Pokemon getSecondaryType()
+    {
+        return this.secondaryType;
+    }
+
 }
 
