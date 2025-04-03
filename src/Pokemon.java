@@ -52,6 +52,18 @@ abstract class Pokemon {
         System.out.println("Grahhhh");
     }
 
+    public void quickAttack(){
+        System.out.println(getName() + " uses quick attack!");
+        attackSound();
+        System.out.println("Damage: " + getAttack());
+    }
+
+    public void scratch(){
+        System.out.println(getName() + " uses scratch!");
+        attackSound();
+        System.out.println("Damage: " + getAttack());
+    }
+
     public int getAttack() {
         return attack;
     }

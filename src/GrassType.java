@@ -19,18 +19,6 @@ public class GrassType extends Pokemon {
         System.out.println("Rustle rustle! 🍃");
     }
 
-    public void quickAttack(){
-        System.out.println(getName() + " uses quick attack!");
-        attackSound();
-        System.out.println("Damage: " + getAttack());
-    }
-
-    public void scratch(){
-        System.out.println(getName() + " uses scratch!");
-        attackSound();
-        System.out.println("Damage: " + getAttack());
-    }
-
     public void leafStorm(){
         grassMove();
         System.out.println(getName() + " uses 🍃 leaf storm! 🍃");

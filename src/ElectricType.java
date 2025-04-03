@@ -19,18 +19,6 @@ class ElectricType extends Pokemon {
         System.out.println("Bzzt bzzt ⚡⚡");
     }
 
-    public void quickAttack(){
-        System.out.println(getName() + " uses quick attack!");
-        attackSound();
-        System.out.println("Damage: " + getAttack());
-    }
-
-    public void scratch(){
-        System.out.println(getName() + " uses scratch!");
-        attackSound();
-        System.out.println("Damage: " + getAttack());
-    }
-
     public void thunderPunch(){
         thunderMove();
         System.out.println(getName() + " uses ⚡ thunder punch! ⚡");
